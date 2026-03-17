@@ -48,7 +48,7 @@
             border-top: 1px solid grey;
             border-bottom: 1px solid grey;
         }
-        
+
         .activity-col img{
             border-radius: 50%;
         }
@@ -71,6 +71,48 @@
             height: 100px;
         }
 
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li {
+            list-style-type: none;
+        }
+
+        nav ul {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav li {
+            list-style-type: none;
+
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /* unvisited link */
+        nav a:link {
+            color: #DCDCDC;
+        }
+
+        /* visited link */
+        nav a:visited {
+            color: #DCDCDC;
+        }
+
+        /* mouse over link */
+        nav a:hover {
+            color: white;
+        }
+
+        /* selected link */
+        nav a:active {
+            color: white;
+        }
     </style>
 
 </head>
@@ -81,9 +123,20 @@
         <h1>Explore Laguna Brava</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li>
+                <a href="#activities">Things to Do</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     <main class="container">
         <article class="activity-row">
-            <div class="activity-col">
+            <div class="activity-col img">
                 <img src="img/kayaking.jpeg" alt="View of the lake with kayak on the horizon">
             </div>
             <div class="activity-col">
@@ -114,7 +167,7 @@
                 <li><span class="bold">Minimum:</span> 4 pax</li>
             </ul>
             </div>
-            <div class="activity-col">
+            <div class="activity-col img">
             <img src="img/boat-ride.jpeg" alt="View of the lake with a kayak on the horizon">
             </div>
         </article>
