@@ -14,20 +14,20 @@
         }
 
         h1{
-        font-size: 6rem;
+        font-size: 6em;
         text-align: center;
         }
 
         footer {
-            text-align: center;
+        text-align: center;
         }
 
         h2{
-        font-size: 3rem;
+        font-size: 3em;
         }
 
         .bold{
-            font-weight: bold;
+        font-weight: bold;
         }
 
         .container {
@@ -48,6 +48,7 @@
             border-top: 1px solid grey;
             border-bottom: 1px solid grey;
         }
+        
         .activity-col img{
             border-radius: 50%;
         }
@@ -59,6 +60,15 @@
 
         #experience_form input, #experience_form textarea{
             padding: 10px;
+        }
+
+        .experience_input {
+            width: 300px;
+        }
+
+        #experience_form textarea {
+            width: 100%;
+            height: 100px;
         }
 
     </style>
@@ -120,11 +130,11 @@
         </section>
 
         <!-- A form asking for page viewer's experiences -->
-        <form>
+        <form id="experience_form">
             <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Write your name">
+            <input class="experience_input" type="text" name="name" id="name" placeholder="Write your name">
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="Write your email">
+            <input class="experience_input" type="email" name="email" id="email" placeholder="Write your email">
             <label for="experience">Experience: </label>
             <textarea name="experience" id="experience"
                 placeholder="Please share with us your experience."></textarea>
